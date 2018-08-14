@@ -1,14 +1,16 @@
 .header-wrapper {
+    grid-row: header-s/header-e;
+    grid-column: content-s/content-e;
     
-    display:grid;
+    display: grid;
     grid-template-columns: [s] 1fr [e];
-    grid-template-rows: [title-s]3rem [title-e sub-s] 2rem [sub-e];
+    grid-template-rows: [title-s] 3rem [title-e sub-s] 2rem [sub-e] 3rem;
     
     &__title {
         grid-row: title-s/title-e;
         grid-column: s/e;
     }
-    &__subtitle {
+    &__subtitle { 
         grid-row: sub-s/sub-w;
         grid-column: s/e;
     }
@@ -16,7 +18,6 @@
 
 
 .header-wrapper {
-    
     padding-top: 4rem;
     
     &__title {
